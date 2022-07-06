@@ -10,10 +10,15 @@
   <link href="https://jsd.onmicrosoft.cn/gh/highlightjs/cdn-release@11.5.1/build/styles/default.min.css" type="text/css" rel="stylesheet" />
   <script src="https://jsd.onmicrosoft.cn/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
   <div class="title">
-    <h2>用CSS画一个哆啦A梦</h2>
+    <h2>Zkeq のドラえもん<br>
+      
+    Zkeq 的 多啦A梦</h2>
     <div class="actions">
-      <button class="play">播放</button>
-      <button class="stop">暂停</button>
+      <div class="oneline">
+      <button class="play lineitem">播放</button>
+      <button class="stop lineitem">暂停</button>
+      </div>
+      速度：<input type="range" class="btn" onchange="change_range(this.value)" min="1" max="20" step="1" value="5" />
     </div>
   </div>
   <div class="container">

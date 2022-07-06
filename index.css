@@ -87,13 +87,74 @@ h2 {
   font-size: 40px;
 }
 
-@media screen and (max-width: 414px) {
+.oneline {
+  text-align: center;;
+}
+
+.lineitem {
+  margin-left: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+  text-align:inherit;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
   pre {
     height: 40vh !important;
     margin-top: -60px;
   }
   h2 {
+    font-size: 15px;
+    line-height: 1.3rem;
+  }
+
+  pre code.hljs {
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px 0px;
+    height: 100%;
+  }
+
+  .doraemon {
+    order: 1;
     font-size: 20px;
+    height: 50%;
+    padding-left: 13em;
+    margin-top: 50px;
+  }
+
+  .text {
+    order: 2;
+    padding: 2em 2em;
+    height: 50%;
+    width: auto;
+    line-height: 1.2;
+    font-size: 14px;
+  }
+
+  .oneline {
+    margin-top: 10px;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  pre {
+    height: 40vh !important;
+    margin-top: -60px;
+  }
+  h2 {
+    font-size: 15px;
+    line-height: 1.3rem;
   }
 
   pre code.hljs {
@@ -122,5 +183,13 @@ h2 {
     width: auto;
     line-height: 1.2;
     font-size: 14px;
+  }
+
+  .oneline {
+    margin-top: 10px;
+  }
+
+  .btn {
+    margin-bottom: 10px;
   }
 }

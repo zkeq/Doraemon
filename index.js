@@ -400,6 +400,7 @@ const stopButton = document.querySelector('.stop');
 const progressBar = document.querySelector('.progress-bar');
 
 let textStartIndex = 0;
+let range = 3;
 let timer = null;
 
 const { width: finalWidth } = document.querySelector('body').getBoundingClientRect();
@@ -412,9 +413,13 @@ const play = () => {
   if (timer) return;
 
   timer = setInterval(() => {
-    textStartIndex += 3;
+    textStartIndex += range;
     if (textStartIndex > len) {
-      stop();
+      textDom.innerHTML =  cssString.substring(0, len);
+      styleDom.innerHTML = cssString.substring(0, len);
+      updateProgress(1);
+      // textDom.scrollTop = textDom.scrollHeight;
+      hljs.highlightAll();
     } else {
       // if (cssString[textStartIndex] === "\n") {
       //   codeString += "<br>";
@@ -439,3 +444,8 @@ const stop = () => {
 
 playButton.onclick = play;
 stopButton.onclick = stop;
+
+
+function change_range(e) {
+  range = Number(e);
+}
