@@ -39,9 +39,9 @@ const cssString = `
 
 .eye {
   width: 1.9em;
-  height: 2.1em;
+  height: 2.2em;
   border: var(--border);
-  border-radius: 41%;
+  border-radius: 48%;
   position: absolute;
   top: -1.4em;
   background-color: var(--skin-color);
