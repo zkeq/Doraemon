@@ -414,7 +414,7 @@ const play = () => {
     auio = "https://media.onmicrosoft.cn/doraemon.mp3";
     auio = new Audio(auio);
     auio.loop = true;
-    auio.volume = 0;
+    auio.volume = 1;
     init = 1;
   }
   auio.play();
@@ -432,12 +432,6 @@ const play = () => {
       // textDom.scrollTop = textDom.scrollHeight;
       hljs.highlightAll();
     } else {
-      try {
-        auio.volume += 0.001;
-      }
-      catch (e) {
-        console.log(e);
-      }
       // if (cssString[textStartIndex] === "\n") {
       //   codeString += "<br>";
       // } else if (cssString[textStartIndex] === " ") {
@@ -456,15 +450,7 @@ const play = () => {
 
 const stop = () => {
   window.clearInterval(timer);
-  pause = setInterval(() => {
-    auio.volume -= 0.001;
-    if (auio.volume <= 0.3) {
-      auio.pause();
-      // 取消注册setInterval
-      window.clearInterval(pause);
-    }
-  }, 0);
-
+  auio.pause();
   timer = null;
 };
 
