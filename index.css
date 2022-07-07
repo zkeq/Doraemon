@@ -9,9 +9,9 @@
   --skin-color: #fff;
   --clothes-color: #12c2eb;
   --eyeball-color: #000;
-  --nose-color: radial-gradient(circle at 77% 36%, #fff, #c93e00 36%, #c93e00);
-  --choker-color: linear-gradient(to bottom, #ca4100, #800400);
-  --bell-color: linear-gradient(to left bottom, #fff, #f4ec25, rgba(0, 0, 0, .2) 114%);
+  --nose-color: radial-gradient(circle at 68% 44%, rgba(255,255,255,1) 7%, rgb(255 0 0) 20%);
+  --choker-color: #e5000d;
+  --bell-color: #fff900;
   --bg-color: #fff;
 }
 

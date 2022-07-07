@@ -51,12 +51,12 @@ const cssString = `
   content: "";
   display: block;
   width: 0.3em;
-  height: 0.3em;
+  height: 0.5em;
   border: var(--border);
   border-radius: 50%;
   position: absolute;
   bottom: 0.3em;
-  background-color: var(--eyeball-color);
+  background: radial-gradient(circle, rgba(255,255,255,1) 14%, rgba(0,0,0,1) 24%);
 }
 
 .eye.left {
@@ -243,8 +243,8 @@ const cssString = `
 }
 
 .arm.right {
-  transform: rotate(-57deg);
-  top: -0.1em;
+  transform: rotate(-117deg);
+  top: -0.9em;
   background-color: var(--arm-right);
 }
 
@@ -432,6 +432,7 @@ const play = () => {
       updateProgress(1);
       // textDom.scrollTop = textDom.scrollHeight;
       hljs.highlightAll();
+      window.clearInterval(timer);
     } else {
       // if (cssString[textStartIndex] === "\n") {
       //   codeString += "<br>";
