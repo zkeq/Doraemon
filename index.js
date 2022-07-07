@@ -407,9 +407,17 @@ const { width: finalWidth } = document.querySelector('body').getBoundingClientRe
 const updateProgress = (progress) => {
   progressBar.style.width = `${finalWidth * progress}px`;
 };
-
+let init = 0;
 const len = cssString.length;
 const play = () => {
+  if (init === 0) {
+    auio = "https://media.onmicrosoft.cn/doraemon.mp3";
+    auio = new Audio(auio);
+    auio.loop = true;
+    auio.volume = 0;
+    init = 1;
+  }
+  auio.play();
   if (textStartIndex >= len) {
     textStartIndex = 0;
   }
@@ -424,6 +432,12 @@ const play = () => {
       // textDom.scrollTop = textDom.scrollHeight;
       hljs.highlightAll();
     } else {
+      try {
+        auio.volume += 0.001;
+      }
+      catch (e) {
+        console.log(e);
+      }
       // if (cssString[textStartIndex] === "\n") {
       //   codeString += "<br>";
       // } else if (cssString[textStartIndex] === " ") {
@@ -442,6 +456,15 @@ const play = () => {
 
 const stop = () => {
   window.clearInterval(timer);
+  pause = setInterval(() => {
+    auio.volume -= 0.001;
+    if (auio.volume <= 0.3) {
+      auio.pause();
+      // 取消注册setInterval
+      window.clearInterval(pause);
+    }
+  }, 0);
+
   timer = null;
 };
 
