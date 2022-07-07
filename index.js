@@ -433,6 +433,7 @@ const play = () => {
       // textDom.scrollTop = textDom.scrollHeight;
       hljs.highlightAll();
       window.clearInterval(timer);
+      timer = null;
     } else {
       // if (cssString[textStartIndex] === "\n") {
       //   codeString += "<br>";

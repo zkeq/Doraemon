@@ -30,6 +30,7 @@ body {
   background: var(--bg-color);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   /* 
    背景辅助线
   background-image: 
