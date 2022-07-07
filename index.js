@@ -304,13 +304,14 @@ const cssString = `
 .main-body::after {
   content: "";
   position: absolute;
-  height: 1.1em;
+  height: 1.2em;
   width: var(--border-width);
   background-color: var(--clothes-color);
 }
 
 .main-body::before {
-  top: 1px;
+  top: 2px;
+  height: 1.34em;
   right: 100%;
   background-color: var(--arm-left);
 }
