@@ -310,14 +310,14 @@ const cssString = `
 }
 
 .main-body::before {
-  top: 2px;
-  height: 1.34em;
+  top: 0;
+  height: 1.25em;
   right: 100%;
   background-color: var(--arm-left);
 }
 
 .main-body::after {
-  top: 3px;
+  top: 0;
   left: 100%;
   background-color: var(--arm-right);
 }
