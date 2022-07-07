@@ -426,6 +426,7 @@ const play = () => {
   timer = setInterval(() => {
     textStartIndex += range;
     if (textStartIndex > len) {
+      playButton.innerHTML = '重放'
       textDom.innerHTML =  cssString.substring(0, len);
       styleDom.innerHTML = cssString.substring(0, len);
       updateProgress(1);
@@ -439,6 +440,7 @@ const play = () => {
       // } else {
       //   codeString += cssString[textStartIndex];
       // }
+      playButton.innerHTML = '播放'
       textDom.innerHTML =  cssString.substring(0, textStartIndex);
       styleDom.innerHTML = cssString.substring(0, textStartIndex);
       updateProgress(textStartIndex / len);
