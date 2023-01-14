@@ -4,72 +4,246 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon.svg">
-  <title>Zkeq のドラえもん</title>
+  <title>自我介绍</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <link href="https://jsd.onmicrosoft.cn/gh/highlightjs/cdn-release@11.5.1/build/styles/default.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://jsd.onmicrosoft.cn/gh/highlightjs/cdn-release@11.5.1/build/styles/night-owl.min.css" type="text/css" rel="stylesheet" />
   <script src="https://jsd.onmicrosoft.cn/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/miniMAC/magic@master/dist/magic.css">
+  <script src="https://cdnjs.onmicrosoft.cn/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <div class="title">
-    <h2>Zkeq のドラえもん<br>
-      
-    Zkeq 的 哆啦A梦</h2>
+    <div>
+      <h2>自我介绍</h2>
+      <h3>Self-introduction</h3>
+    </div>
     <div class="actions">
       <div class="oneline">
       <button class="play lineitem">播放</button>
       <button class="stop lineitem">暂停</button>
       </div>
-      速度：<input type="range" class="btn" onchange="change_range(this.value)" min="1" max="20" step="1" value="5" />
+      速度：<input type="range" class="btn" onchange="change_range(this.value)" min="1" max="3" step="1" value="1" />
     </div>
     
   </div>
   <div class="container">
     <div class="progress-bar"></div>
-    <pre>
-    <code class="text language-css"></code>
+    <pre class="code_wrap">
+      <code class="text language-css">
+        
+      </code>
+    
     </pre>
-    <div class="doraemon">
-      <div class="head">
-        <div class="face">
-          <div class="eye left"></div>
-          <div class="eye right"></div>
-          <div class="nose"></div>
-          <div class="mouth"></div>
-          <div class="mousetache">
-            <div class="left">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="right">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="choker">
-        <div class="bell">
-          <div class="dot"></div>
-        </div>
-      </div>
-      <div class="body">
-        <div class="arm left"></div>
-        <div class="main-body">
-          <div class="belly">
-            <div class="pocket"></div>
-          </div>
-          <div class="feet">
-            <div class="foot left"></div>
-            <div class="foot right"></div>
-          </div>
-        </div>
-        <div class="arm right"></div>
-      </div>
+
+    <div class="card_wrap">
+      <section class="section-0">
+        <h3>Hello, I am Zkeq。 👋</h3>
+      </section>
+      
+      <section class="section-1">
+        <h3>#000 一个大一学生，学过 Python，目前在学前端。</h3>
+
+        <h4>作为程序员，GitHub 的数据应该可以代表一些事情：</h4>
+
+        <a href="https://github.com/zkeq" target="_blank">
+          <img src="https://stats.readme.icodeq.com/api?username=zkeq&show_icons=true&theme=radical&hide_border=true"> 
+        </a>
+        <button onclick="play()">继续播放</button>
+      </section>
+
+      <section class="section-2">
+      <h3>#00F 那么，我都做过什么呢？</h3>
+
+        <h5>我想，最令我满意的，应该是：<a target="_blank" href="https://cdn.onmicrosoft.cn"> 渺软 CDN</a></h5>
+
+        <a href="https://cdn.onmicrosoft.cn" target="_blank">
+          <img src="https://bu.dusays.com/2023/01/15/63c2d4143b8d7.png">
+        </a>
+        <ul>
+          <li>同时 这也是最近的项目 ( 12.31 上线 1.7 完成重构) </li>
+          <li>主要是为了解决前端在开发简单 demo 时遇到的静态资源引入的问题。</li>
+          <li>详情请移步评论区最后一条查看 更新日志</li>
+          <li>页面重构其实是 @xcsoft 大佬帮忙做的，我也在努力学习做出漂亮页面啦。</li>
+        </ul>
+        <button onclick="play()">继续播放</button>
+      </section>
+
+      <section class="section-3">
+      <h3>#0FF 再者重要的，应该就是我的博客啦。</h3>
+
+        <a href="https://icodeq.com" target="_blank">
+          <img src="https://img.onmicrosoft.cn/2022-09-08/image-20220909153929835.png">
+        </a>
+        <h5>到目前的话，应该是在很用心的运营这个博客的！</h5>
+
+        <ul>
+          <li>博文更新 240+ 篇，累计字数 146k+ 。</li>
+          <li>虽然大部分都是学习的笔记吧，但是在这个过程中养成了整理知识点的好习惯！</li>
+          <li>因为访问数据被清过一次，所以访问人数应该在 10w uv +</li>
+          <li>因为这个博客折腾出了很多周边产品（x） </li>
+          <li>感觉有这样一个可以自己掌控的小天地很舒服</li>
+        </ul>
+
+        <h5>这里是最近的博文哦：</h5>
+
+        <a href="https://icodeq.com" target="_blank">
+          <img src="https://zkeq.xyz/Profile/article.svg">
+        </a>
+        <ul>
+          <li>因为是学习委员，再加上我们班的专业就是前端</li>
+          <li>所以暑假带着他们一起学习啦。</li>
+        </ul>
+        <button onclick="play()">继续播放</button>
+      </section>
+
+      <section class="section-4">
+        <h3>#0F0 优雅至极！追梦计划！</h3>
+
+        <a href="https://dream-plan.cn" target="_blank">
+          <img src="https://user-images.onmicrosoft.cn/155082301-d777c58f-d495-42d7-8dba-59ca844379e7.jpg">
+        </a>
+        <ul>
+          <li>这个其实是从高中带过来的执念 hhh</li>
+          <li>因为那时候很执着于励志视频，总感觉自己的生活没有斗志（</li>
+          <li>于是趁着闲下来并且用自己的爬虫知识，搞来了 1000 多个 video </li>
+          <li>就做出来了这个（</li>
+        </ul>
+        <button onclick="play()">继续播放</button>
+      </section>
+
+      <section class="section-5">
+        <h3>#FF0 流量之最！图欧学习资源库</h3>
+
+        <a href="https://tuostudy.com" target="_blank">
+          <img src="https://githubusercontent.onmicrosoft.cn/zkeq/Python-WebSite-Screenshot/master/save/tuostudy.com/2023-01-14_06-08-37.png">      
+        </a>
+        <ul>
+          <li>这个站的日 uv 在 1w 左右() 应该算是我运维的最大的流量体了。</li>
+          <li>虽然是公益运维，但是它带动了我的一系列周边（）</li>
+        </ul>
+
+        <h5>这里是统计日志：</h5>
+
+        <a href="https://site.icodeq.com/tuostudy.com" target="_blank">
+          <img src="https://bu.dusays.com/2023/01/15/63c2de4536cac.png">
+        </a>
+        <button onclick="play()">继续播放</button>
+      </section>
+
+      <section class="section-6">
+        <h3>#F0F 其他的我感觉倒是没什么好炫耀的啦</h3>
+      
+        <blockquote><h5>都是一些自己练手或者自己玩的小项目</h5></blockquote>
+        <button onclick="play()">继续播放</button>
+        <section class="section-6_1">
+          <h4>#00000F 每日早报</h4>
+
+          <a href="https://news.icodeq.com" target="_blank">
+            <img src="https://bu.dusays.com/2023/01/15/63c2d48578f96.png">
+          </a>
+          <ul>
+            <li>初学 js 的时候写的，到现在好像每天 1k 访问量的样子</li>
+            <li>后端采用 Python 云函数 bs4 + fastapi 开发</li>
+            <li>这个 js 写的惨不忍睹，但是勉强能用只能算是</li>
+          </ul>
+          <button onclick="play()">继续播放</button>
+        </section>
+
+        <section class="section-6_2">
+        <h4>#0000F0 LearnOnly 导航重构</h4>
+
+          <a href="https://learnonly.xyz" target="_blank">
+            <img src="https://bu.dusays.com/2023/01/15/63c2d43e74542.png">
+          </a>
+            <ul>
+            <li>这个主要是模仿 万花筒 导航站，做的自己的一个起始页。</li>
+            <li>里面用到了 js 瀑布流，算是练习了一下基本功。</li>
+            <li>支持导入自己的书签（如果你也有很好的文件夹分类习惯的话）</li>
+          </ul>
+          <button onclick="play()">继续播放</button>
+        </section>
+
+        <section class="section-6_3">
+          <h4>#000F00 Vue2 + element 做的几个单页</h4>
+          <a href="https://share.onmicrosoft.cn/5fa9z3zqt" target="_blank">
+            <img src="https://img.onmicrosoft.cn/2022/12/17/84ffc1d1-1562-4a59-b901-4206427272b2.png">
+            <img src="https://img.onmicrosoft.cn/2022/12/17/7e32a7e6-040a-49a5-af7b-6eb4f99fc477.png">
+            <img src="https://img.onmicrosoft.cn/2022/12/17/0b05a7b1-ea5f-45dc-b349-2d7c536fddb5.png">
+            <img src="https://bu.dusays.com/2023/01/15/63c2d4b523a60.png">
+          </a>
+          <ul>
+            <li>这些主要是写给自己用的，所以就随便写啦。</li>
+            <li>其实自己没有学过框架，只是模糊知道一点概念。但是双向绑定真的很爽。</li>
+            <li>https://cn.vuejs.org/tutorial/#step-1</li>
+          </ul>
+          <button onclick="play()">继续播放</button>
+        </section>
+
+        <section class="section-6_4">
+          <h4>#00F000 自建不蒜子</h4>
+          <a href="https://busuanzi.icodeq.com" target="_blank">
+            <img src="https://bu.dusays.com/2023/01/15/63c2d60e41f6a.png">
+          </a>
+          <ul>
+            <li>因为我的博客是纯静态博客，没有后台</li>
+            <li>所以想要实现访问量统计的话，就要借助其他工具。</li>
+            <li>不蒜子 就是一个轻量的，开箱即用的统计工具。</li>
+            <li>但是因为其经常 502 所以我自己仿写了一个。/</li>
+        
+          </ul>
+          <button onclick="play()">继续播放</button>
+        </section>
+
+        <section class="section-6_5">
+          <h4>#0F0000 Bing-WallPage-Actions Bing 壁纸爬虫</h4>
+          
+          <a href="https://bing-wallpaper.apifox.cn" target="_blank">
+            <img src="https://img.onmicrosoft.cn/2022-09-08/image-20220909010202981.png">
+          </a>
+          <ul>
+            <li>目前已经上架 Apifox APIhub 啦（就在B站旁边）</li>
+            <li>里面会吐出 单个 国家/地区 所有的每日图片</li>
+            <li>目前大概 270*9 大约 2000 张图片了</li>
+            <li>详情点击图片体验。</li>
+          </ul>
+          <button onclick="play()">继续播放</button>
+        </section>
+
+        <section class="section-6_6">
+          <h4>#F00000 一些平台的部署记录留念</h4>
+
+          <a href="https://github.com/zkeq" target="_blank">
+            <img src="https://img.onmicrosoft.cn/2022-09-08/github.com_zkeq%E7%9A%84%E5%89%AF%E6%9C%AC.png">
+
+            <img src="https://img.onmicrosoft.cn/2022-09-08/vercel.com_dashboard.png">
+
+            <img src="https://bu.dusays.com/2023/01/14/63c2ab62a9a04.png">
+
+            <img src="https://bu.dusays.com/2023/01/15/63c301f60bcaf.png">
+          </a>
+        </section>
+
+        <button onclick="play()">重新播放</button>
+      </section>
+
     </div>
+    
   </div>
 </body>
-<style class="doraemon-style"></style>
+<!-- <style>
+  .container{
+    background-color: #f0f2f5;
+  }
+  .card_wrap{
+    opacity: 0.95; 
+    border-radius: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; 
+    padding: 1.5em 1em; 
+    max-width: 500px; 
+    background: white;
+  }
+</style> -->
+
+<style class="introduction-style"></style>
 <script src="./index.js"></script>
 </html>

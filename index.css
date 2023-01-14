@@ -56,9 +56,9 @@ h2 {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   border-top: 1px solid var(--border-color);
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   flex-grow: 1;
 }
@@ -75,17 +75,12 @@ h2 {
   font-size: 16px;
   overflow-y: auto;
   width: 500px;
-  max-height: 500px;
+  max-height: 600px;
   padding-left: 1em;
 }
 
 .text::-webkit-scrollbar {
   display: none;
-}
-
-.doraemon {
-  width: 420px;
-  font-size: 40px;
 }
 
 .oneline {
@@ -101,51 +96,73 @@ h2 {
   text-align:inherit;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 600px) {
-  pre {
-    height: 40vh !important;
-    margin-top: -60px;
-  }
-  h2 {
-    font-size: 15px;
-    line-height: 1.3rem;
-  }
+h2, h3{
+  margin: 12px 0;
+}
 
-  pre code.hljs {
-    height: 100%;
-  }
+.card_wrap{
+  max-height: 700px;
+  overflow-y: auto;
+}
 
-  .container {
-    flex-direction: column;
-    overflow: hidden;
-    padding: 20px 0px;
-    height: 100%;
-  }
+.card_wrap  img{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
 
-  .doraemon {
-    order: 1;
-    font-size: 20px;
-    height: 50%;
-    padding-left: 13em;
-    margin-top: 50px;
-  }
+a {
+  text-decoration: double;
+  color: #1677ff;
+  border-bottom: 1px dashed #1677ff;
+}
 
-  .text {
-    order: 2;
-    padding: 2em 2em;
-    height: 50%;
-    width: auto;
-    line-height: 1.2;
-    font-size: 14px;
-  }
+ul{
+  /* type 空心圆 */
+  list-style-type: circle;
+  font-size: 0.6rem;
+}
 
-  .oneline {
-    margin-top: 10px;
-  }
+ul > li {
+  margin: 1rem 0;
+}
 
-  .btn {
-    margin-bottom: 10px;
-  }
+blockquote{
+  margin: 10px;
+}
+
+.card_wrap
+{
+  display:  none;
+}
+
+.section-0,
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-6_1,
+.section-6_2,
+.section-6_3,
+.section-6_4,
+.section-6_5,
+.section-6_6{
+  visibility: hidden;
+  padding-top: 30px;
+}
+
+
+.card_wrap{
+  opacity: 0.95; 
+  border-radius: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; 
+  padding: 30px;
+  max-width: 530px; 
+  background: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -193,4 +210,8 @@ h2 {
   .btn {
     margin-bottom: 10px;
   }
+}
+
+.card_wrap {
+  scroll-behavior: smooth;
 }

@@ -1,407 +1,107 @@
-const cssString = `
-.doraemon {
-  display: flex;
-  flex-direction: column;
+const cssString = `/*  
+  你好👋，这里是 Zkeq。
+  这里是一段自我介绍
+  那么，首先，我们来点背景颜色吧？
+*/
+
+.container{
+  background-color: #f0f2f5;
 }
 
-.head {
-  width: 8em;
-  height: 7em;
-  border: var(--border);
-  border-top-left-radius: 4em 4em;
-  border-top-right-radius: 4em 4em;
-  border-bottom-left-radius: 2em 3em;
-  border-bottom-right-radius: 2em 3em;
-  margin-left: 1em;
-  position: relative;
-  background-color: var(--clothes-color);
-  background-image: var(--head-color);
-  z-index: 2;
-  box-shadow: -11px 12px 17px -4px rgba(0, 0, 0, 0.3);
-}
-
-.face {
-  height: 4.5em;
-  width: 6.5em;
-  border: var(--border);
-  border-top-left-radius: 4em 4em;
-  border-top-right-radius: 4em 4em;
-  border-bottom-left-radius: 3em 3em;
-  border-bottom-right-radius: 3em 3em;
-  position: absolute;
-  bottom: 0;
-  left: 0.7em;
-  background-color: var(--skin-color);
-  box-shadow: -5px 14px 8px -9px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(45deg, #ddd, #fff 28%, #fff);
-}
-
-
-.eye {
-  width: 1.9em;
-  height: 2.2em;
-  border: var(--border);
-  border-radius: 48%;
-  position: absolute;
-  top: -1.4em;
-  background-color: var(--skin-color);
-}
-
-.eye::after {
-  content: "";
+/*  
+  什么？你说为什么我要用代码块跟你说话？
+  好吧好吧，给你一个盒子。  
+*/
+.card_wrap{
   display: block;
-  width: 0.3em;
-  height: 0.5em;
-  border: var(--border);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0.3em;
-  background: radial-gradient(circle, rgba(255,255,255,1) 14%, rgba(0,0,0,1) 24%);
 }
 
-.eye.left {
-  left: 1.3em;
+/*  
+  那么，看着盒子听我给你讲吧 🧐
+*/
+.section-0{
+  visibility: visible;
 }
 
-.eye.left::after {
-  right: 0.4em;
+.section-1{
+  visibility: visible;
 }
 
-.eye.right {
-  right: 1.3em;
+.section-2{
+  visibility: visible;
 }
 
-.eye.right::after {
-  left: 0.4em;
+.section-3{
+  visibility: visible;
 }
 
-.nose {
-  width: 0.93em;
-  height: 0.93em;
-  border: var(--border);
-  border-radius: 50%;
-  position: absolute;
-  left: 2.73em;
-  top: 0.5em;
-  text-align: center;
-  background: var(--nose-color);
+.section-4{
+  visibility: visible;
 }
 
-.nose::after {
-  content: "";
-  display: inline-block;
-  border: 0.03em solid;
-  width: 0;
-  height: 2.2em;
-  position: relative;
-  top: 0.82em;
+.section-5{
+  visibility: visible;
 }
 
-.mousetache {
-  position: relative;
-  top: 1em;
-  right: -0.2em;
-  width: 6em;
-  height: 2em;
-  padding: 0 0.5em;
-  display: flex;
-  justify-content: space-between;
+.section-6{
+  visibility: visible;
 }
 
-.mousetache .left span:nth-child(1),
-.mousetache .right span:nth-child(3) {
-  transform: rotate(21deg);
-}
-.mousetache .left span:nth-child(3),
-.mousetache .right span:nth-child(1) {
-  transform: rotate(-21deg);
+.section-6_1{
+  visibility: visible;
 }
 
-.mousetache span {
-  display: block;
-  width: 1.3em;
-  background: var(--border-color);
-  border: 0.02em solid var(--border-color);
-  margin: 0.4em 0px;
+.section-6_2{
+  visibility: visible;
 }
 
-.mouth {
-  width: 4.5em;
-  height: 2.2em;
-  position: absolute;
-  bottom: 0.72em;
-  left: 0.94em;
-  border: var(--border);
-  border-radius: 132%;
-  border-color: var(--border-color);
-  border-top: none;
-  border-left: none;
-  border-right: none;
+.section-6_3{
+  visibility: visible;
 }
 
-@media screen and (max-width: 414px) {
-  .mouth {
-    bottom: 0.6em;
-  }
+.section-6_4{
+  visibility: visible;
 }
 
-.mouth::before,
-.mouth::after {
-  content: "";
-  display: inline-block;
-  width: 0.4em;
-  height: 0.4em;
-  background-color: var(--skin-color);
-  position: relative;
-  top: 0.5em;
+.section-6_5{
+  visibility: visible;
 }
 
-.mouth::before {
-  left: -0.1em;
+.section-6_6{
+  visibility: visible;
 }
 
-.mouth::after {
-  right: -3.7em;
-}
 
-.choker {
-  width: 6em;
-  height: 0.6em;
-  border: var(--border);
-  border-radius: 8px;
-  margin-left: 2em;
-  margin-top: -6px;
-  background: var(--choker-color);
-  text-align: center;
-  z-index: 2;
-}
-
-.choker > .bell {
-  width: 1em;
-  height: 1em;
-  border: var(--border);
-  border-radius: 50%;
-  display: inline-block;
-  margin-top: 0.2em;
-  background: var(--bell-color);
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-}
-
-.bell > .dot {
-  width: 0.26em;
-  height: 0.22em;
-  display: inline-block;
-  vertical-align: 0.32em;
-  border-radius: 50%;
-  background-color: var(--border-color);
-  position: relative;
-}
-
-.bell > .dot::after {
-  content: "";
-  position: absolute;
-  border: 0.04em solid var(--border-color);
-  height: 0.5em;
-  left: 0.089em;
-}
-
-.bell::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  padding: 0.023em;
-  border: var(--border);
-  left: 0;
-  top: 0.23em;
-  border-left: none;
-  border-right: none;
-}
-
-.body {
-  width: 10em;
-  margin-left: 0.5em;
-  position: relative;
-  display: flex;
-}
-
-.arm {
-  width: 1.2em;
-  height: 2.6em;
-  border: var(--border);
-  position: relative;
-  background-color: var(--clothes-color);
-}
-
-.arm.left {
-  transform: rotate(57deg);
-  left: 0.6em;
-  top: -0.2em;
-  box-shadow: -11px 12px 17px -4px rgba(0, 0, 0, 0.3);
-  background-color: var(--arm-left);
-}
-
-.arm.right {
-  transform: rotate(-117deg);
-  top: -0.9em;
-  background-color: var(--arm-right);
-}
-
-.arm::after {
-  content: "";
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  border: var(--border);
-  border-radius: 50%;
-  position: absolute;
-  bottom: -0.7em;
-  left: -0.2em;
-  background-color: var(--skin-color);
-}
-
-.arm.left::after {
-  background-image: linear-gradient(
-    0deg,
-    #999,
-    #ddd 6%,
-    #eee 19%,
-    #fff 50%,
-    #fff 80%,
-    #eee 90%,
-    #ddd 93%,
-    #999
-  );
-}
-
-.arm.right::after {
-  background-image: linear-gradient(
-    27deg,
-    #999,
-    #ddd 6%,
-    #eee 19%,
-    #fff 50%,
-    #fff 80%,
-    #eee 90%,
-    #ddd 93%,
-    #999
-  );
-}
-
-.main-body {
-  width: 5.6em;
-  height: 4.5em;
-  margin-left: 0.52em;
-  border: var(--border);
-  text-align: center;
-  z-index: 1;
-  background: var(--body-color);
-  position: relative;
-}
-
-.main-body::before,
-.main-body::after {
-  content: "";
-  position: absolute;
-  height: 1.2em;
-  width: var(--border-width);
-  background-color: var(--clothes-color);
-}
-
-.main-body::before {
-  top: 0;
-  height: 1.25em;
-  right: 100%;
-  background-color: var(--arm-left);
-}
-
-.main-body::after {
-  top: 0;
-  left: 100%;
-  background-color: var(--arm-right);
-}
-
-.belly {
-  display: inline-block;
-  width: 4.5em;
-  height: 4.3em;
-  border: var(--border);
-  border-radius: 50%;
-  margin-top: -1em;
-  text-align: center;
-  background-color: var(--skin-color);
-}
-
-.belly > .pocket {
-  display: inline-block;
-  width: 3.4em;
-  height: 1.8em;
-  border: var(--border);
-  position: relative;
-  bottom: -2em;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  background-color: var(--skin-color);
-}
-
-.feet {
-  display: flex;
-  margin: 0.7em -0.5em 0 -0.5em;
-}
-
-.feet::before {
-  content: "";
-  position: relative;
-  width: 0.5em;
-  height: 0.7em;
-  border: var(--border);
-  left: 50%;
-  top: -0.3em;
-  transform: translateX(-50%);
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  border-bottom: none;
-  background: var(--bg-color);
-}
-
-.foot {
-  width: 3.15em;
-  height: 0.8em;
-  border: var(--border);
-  z-index: 1;
-  background-color: var(--skin-color);
-  background-image: linear-gradient(45deg, #ddd, #fff 28%, #fff);
-  box-shadow: -31px -17px 26px -10px rgba(0, 0, 0, 0.3);
-}
-
-.foot.left {
-  border-top-left-radius: 1.5em;
-  border-top-right-radius: 1.2em;
-  border-bottom-left-radius: 0.8em;
-  border-bottom-right-radius: 1em;
-  margin-left: -0.6em;
-}
-
-.foot.right {
-  border-top-right-radius: 1.5em;
-  border-top-left-radius: 1.2em;
-  border-bottom-right-radius: 0.8em;
-  border-bottom-left-radius: 1em;
-  margin-left: 0.17em;
-}
 `;
 
 let codeString = '';
 
 const textDom = document.querySelector('.text');
-const styleDom = document.querySelector('.doraemon-style');
+const styleDom = document.querySelector('.introduction-style');
+const cardDom = document.querySelector('.card_wrap');
 const playButton = document.querySelector('.play');
 const stopButton = document.querySelector('.stop');
 const progressBar = document.querySelector('.progress-bar');
 
+
+    
+let section_0 = false;
+let section_1 = false;
+let section_2 = false;
+let section_3 = false;
+let section_4 = false;
+let section_5 = false;
+let section_6 = false;
+let section_6_1 = false;
+let section_6_2 = false;
+let section_6_3 = false;
+let section_6_4 = false;
+let section_6_5 = false;
+let section_6_6 = false;
+
+
 let textStartIndex = 0;
-let range = 3;
+let range = 1;
 let timer = null;
 
 const { width: finalWidth } = document.querySelector('body').getBoundingClientRect();
@@ -411,14 +111,6 @@ const updateProgress = (progress) => {
 let init = 0;
 const len = cssString.length;
 const play = () => {
-  if (init === 0) {
-    auio = "https://media.onmicrosoft.cn/doraemon.mp3";
-    auio = new Audio(auio);
-    auio.loop = true;
-    auio.volume = 1;
-    init = 1;
-  }
-  auio.play();
   if (textStartIndex >= len) {
     textStartIndex = 0;
   }
@@ -443,19 +135,71 @@ const play = () => {
       // } else {
       //   codeString += cssString[textStartIndex];
       // }
-      playButton.innerHTML = '播放'
-      textDom.innerHTML =  cssString.substring(0, textStartIndex);
-      styleDom.innerHTML = cssString.substring(0, textStartIndex);
-      updateProgress(textStartIndex / len);
-      textDom.scrollTop = textDom.scrollHeight;
+        playButton.innerHTML = '播放'
+        textDom.innerHTML =  cssString.substring(0, textStartIndex);
+        styleDom.innerHTML = cssString.substring(0, textStartIndex);
+        updateProgress(textStartIndex / len);
+        textDom.scrollTop = textDom.scrollHeight;
       hljs.highlightAll();
     }
-  }, 0);
+    
+    
+    if (textStartIndex > 713 && !section_6_6){
+      document.querySelector(".section-6_6").scrollIntoView(true);
+      section_6_6 = true;
+      textStartIndex = 9999;
+      stop();
+    }else if (textStartIndex > 673 && !section_6_5){
+      document.querySelector(".section-6_5").scrollIntoView(true);
+      section_6_5 = true;
+      stop();
+    }else if (textStartIndex > 633 && !section_6_4){
+      document.querySelector(".section-6_4").scrollIntoView(true);
+      section_6_4 = true;
+      stop();
+    }else if (textStartIndex > 593 && !section_6_3){
+      document.querySelector(".section-6_3").scrollIntoView(true);
+      section_6_3 = true;
+      stop();
+    }else if (textStartIndex > 553 && !section_6_2){
+      document.querySelector(".section-6_2").scrollIntoView(true);
+      section_6_2 = true;
+      stop();
+    }else if (textStartIndex > 513 && !section_6_1){
+      document.querySelector(".section-6_1").scrollIntoView(true);
+      section_6_1 = true;
+      stop();
+    }else if (textStartIndex > 473 && !section_6){
+      document.querySelector(".section-6").scrollIntoView(true);
+      section_6 = true;
+      stop();
+    }else if (textStartIndex > 435 && !section_5){
+      document.querySelector(".section-5").scrollIntoView(true);
+      section_5 = true;
+      stop();
+    }else if (textStartIndex > 396 && !section_4){
+      document.querySelector(".section-4").scrollIntoView(true);
+      section_4 = true;
+      stop();
+    }else if (textStartIndex > 359 && !section_3){
+      document.querySelector(".section-3").scrollIntoView(true);
+      section_3 = true;
+      stop();
+    }else if (textStartIndex > 321 && !section_2){
+      document.querySelector(".section-2").scrollIntoView(true);
+      section_2 = true;
+      stop();
+    }else if (textStartIndex > 283 && !section_1){
+      document.querySelector(".section-1").scrollIntoView(true);
+      section_1 = true;
+      stop();
+    }
+
+  }, 50);
 };
 
 const stop = () => {
   window.clearInterval(timer);
-  auio.pause();
   timer = null;
 };
 
