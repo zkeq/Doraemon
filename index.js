@@ -229,7 +229,9 @@ const play = () => {
       section_1 = true;
       stop();
     }else if (textStartIndex > 258 && !section_0){
-      document.querySelector(".section-0").scrollIntoView(true);
+      setTimeout(function(){
+        document.querySelector(".card_wrap").scrollTop = 0;
+      }, 0);
       section_0 = true;
     }
 
