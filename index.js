@@ -84,6 +84,8 @@ const stopButton = document.querySelector('.stop');
 const progressBar = document.querySelector('.progress-bar');
 
 
+let music_init = false;
+
     
 let section_0 = false;
 let section_1 = false;
@@ -112,13 +114,10 @@ let init = 0;
 const len = cssString.length;
 const play = () => {
   if (init === 0) {
-    auio = "https://media.onmicrosoft.cn/Hey_You.mp3";
-    auio = new Audio(auio);
-    auio.loop = true;
-    auio.volume = 1;
+    launchFullScreen(document.querySelector(".si_body"));
     init = 1;
+    control_music();
   }
-  auio.play();
   if (textStartIndex >= len) {
     textStartIndex = 0;
   }
@@ -173,56 +172,73 @@ const play = () => {
 
       stop();
     }else if (textStartIndex > 673 && !section_6_5){
-      document.querySelector(".section-6_5").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-6_5").scrollIntoView(true);
       section_6_5 = true;
       stop();
     }else if (textStartIndex > 633 && !section_6_4){
-      document.querySelector(".section-6_4").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-6_4").scrollIntoView(true);
       section_6_4 = true;
       stop();
     }else if (textStartIndex > 593 && !section_6_3){
-      document.querySelector(".section-6_3").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-6_3").scrollIntoView(true);
       section_6_3 = true;
       stop();
     }else if (textStartIndex > 553 && !section_6_2){
-      document.querySelector(".section-6_2").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-6_2").scrollIntoView(true);
       section_6_2 = true;
       stop();
     }else if (textStartIndex > 513 && !section_6_1){
-      document.querySelector(".section-6_1").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-6_1").scrollIntoView(true);
       section_6_1 = true;
       stop();
     }else if (textStartIndex > 473 && !section_6){
-      document.querySelector(".section-6").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-6").scrollIntoView(true);
       section_6 = true;
       stop();
     }else if (textStartIndex > 435 && !section_5){
-      document.querySelector(".section-5").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-5").scrollIntoView(true);
       section_5 = true;
       stop();
     }else if (textStartIndex > 396 && !section_4){
-      document.querySelector(".section-4").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-4").scrollIntoView(true);
       section_4 = true;
       stop();
     }else if (textStartIndex > 359 && !section_3){
-      document.querySelector(".section-3").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-3").scrollIntoView(true);
       section_3 = true;
       stop();
     }else if (textStartIndex > 321 && !section_2){
-      document.querySelector(".section-2").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-2").scrollIntoView(true);
       section_2 = true;
       stop();
     }else if (textStartIndex > 283 && !section_1){
-      document.querySelector(".section-1").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-1").scrollIntoView(true);
       section_1 = true;
       stop();
     }else if (textStartIndex > 245 && !section_1){
-      document.querySelector(".section-0").scrollIntoView({block: "nearest", inline: "nearest"});
+      document.querySelector(".section-0").scrollIntoView(true);
       section_0 = true;
     }
 
   }, 50);
 };
+
+
+function control_music(){
+  if (!music_init){
+    auio = "https://media.onmicrosoft.cn/Hey_You.mp3";
+    auio = new Audio(auio);
+    auio.loop = true;
+    auio.volume = 1;
+    music_init = true;
+    auio.play();
+  }else if(auio.paused){
+    auio.play();
+  }else{
+    auio.pause();
+  }
+  
+}
 
 const stop = () => {
   window.clearInterval(timer);
@@ -235,4 +251,58 @@ stopButton.onclick = stop;
 
 function change_range(e) {
   range = Number(e);
+}
+
+function launchFullScreen(element) {
+  if(isFullScreen()){
+    exitScreen();
+    return;
+  }
+
+  if (element.requestFullscreen) {
+ 
+    element.requestFullscreen();
+ 
+  } else if (element.mozRequestFullScreen) {
+ 
+    element.mozRequestFullScreen();
+ 
+  } else if (element.webkitRequestFullscreen) {
+ 
+    element.webkitRequestFullscreen();
+ 
+  } else if (element.msRequestFullscreen) {
+ 
+    element.msRequestFullscreen();
+ 
+  }
+ 
+ }
+
+function exitScreen() {
+  if (document.exitFullscreen) {
+      document.exitFullscreen();
+  }
+  else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+  }
+  else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+  }
+  else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+  }
+  if (typeof cfs != "undefined" && cfs) {
+      cfs.call(el);
+  }
+}
+
+function isFullScreen() {
+  return  !! (
+      document.fullscreen || 
+      document.mozFullScreen ||                         
+      document.webkitIsFullScreen ||       
+      document.webkitFullScreen || 
+      document.msFullScreen 
+  );
 }
