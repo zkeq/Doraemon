@@ -243,6 +243,12 @@ blockquote{
   }
 }
 
+@media screen and (max-width: 900px) {
+  .card_wrap {
+    max-width: 530px; 
+  }
+}
+
 .card_wrap {
   scroll-behavior: smooth;
 }
