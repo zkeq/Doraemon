@@ -151,8 +151,14 @@ blockquote{
 .section-6_4,
 .section-6_5,
 .section-6_6{
-  visibility: hidden;
   padding-top: 30px;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  visibility: 0;
+  opacity: 0;
 }
 
 

@@ -21,54 +21,67 @@ const cssString = `/*
 */
 .section-0{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-1{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-2{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-3{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-4{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-5{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-6{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-6_1{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-6_2{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-6_3{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-6_4{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-6_5{
   visibility: visible;
+  opacity: 1;
 }
 
 .section-6_6{
   visibility: visible;
+  opacity: 1;
 }
 
 
@@ -151,7 +164,7 @@ const play = () => {
     }
     
     
-    if (textStartIndex > 713 && !section_6_6){
+    if (textStartIndex > 893 && !section_6_6){
       document.querySelector(".section-6_6").scrollIntoView(true);
       section_6_6 = true;
       textStartIndex = 9999;
@@ -171,51 +184,51 @@ const play = () => {
       section_6_6 = false;
 
       stop();
-    }else if (textStartIndex > 673 && !section_6_5){
+    }else if (textStartIndex > 839 && !section_6_5){
       document.querySelector(".section-6_5").scrollIntoView(true);
       section_6_5 = true;
       stop();
-    }else if (textStartIndex > 633 && !section_6_4){
+    }else if (textStartIndex > 785 && !section_6_4){
       document.querySelector(".section-6_4").scrollIntoView(true);
       section_6_4 = true;
       stop();
-    }else if (textStartIndex > 593 && !section_6_3){
+    }else if (textStartIndex > 731 && !section_6_3){
       document.querySelector(".section-6_3").scrollIntoView(true);
       section_6_3 = true;
       stop();
-    }else if (textStartIndex > 553 && !section_6_2){
+    }else if (textStartIndex > 677 && !section_6_2){
       document.querySelector(".section-6_2").scrollIntoView(true);
       section_6_2 = true;
       stop();
-    }else if (textStartIndex > 513 && !section_6_1){
+    }else if (textStartIndex > 623 && !section_6_1){
       document.querySelector(".section-6_1").scrollIntoView(true);
       section_6_1 = true;
       stop();
-    }else if (textStartIndex > 473 && !section_6){
+    }else if (textStartIndex > 569 && !section_6){
       document.querySelector(".section-6").scrollIntoView(true);
       section_6 = true;
       stop();
-    }else if (textStartIndex > 435 && !section_5){
+    }else if (textStartIndex > 517 && !section_5){
       document.querySelector(".section-5").scrollIntoView(true);
       section_5 = true;
       stop();
-    }else if (textStartIndex > 396 && !section_4){
+    }else if (textStartIndex > 465 && !section_4){
       document.querySelector(".section-4").scrollIntoView(true);
       section_4 = true;
       stop();
-    }else if (textStartIndex > 359 && !section_3){
+    }else if (textStartIndex > 414 && !section_3){
       document.querySelector(".section-3").scrollIntoView(true);
       section_3 = true;
       stop();
-    }else if (textStartIndex > 321 && !section_2){
+    }else if (textStartIndex > 361 && !section_2){
       document.querySelector(".section-2").scrollIntoView(true);
       section_2 = true;
       stop();
-    }else if (textStartIndex > 283 && !section_1){
+    }else if (textStartIndex > 309 && !section_1){
       document.querySelector(".section-1").scrollIntoView(true);
       section_1 = true;
       stop();
-    }else if (textStartIndex > 245 && !section_1){
+    }else if (textStartIndex > 258 && !section_0){
       document.querySelector(".section-0").scrollIntoView(true);
       section_0 = true;
     }
