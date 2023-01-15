@@ -209,8 +209,16 @@ blockquote{
     font-size: 14px;
   }
 
+  .title_main{
+    white-space: nowrap;
+  }
+
   .oneline {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    flex-direction: row;
   }
 
   .btn {
