@@ -111,6 +111,14 @@ const updateProgress = (progress) => {
 let init = 0;
 const len = cssString.length;
 const play = () => {
+  if (init === 0) {
+    auio = "https://media.onmicrosoft.cn/Hey_You.mp3";
+    auio = new Audio(auio);
+    auio.loop = true;
+    auio.volume = 1;
+    init = 1;
+  }
+  auio.play();
   if (textStartIndex >= len) {
     textStartIndex = 0;
   }
@@ -148,6 +156,21 @@ const play = () => {
       document.querySelector(".section-6_6").scrollIntoView(true);
       section_6_6 = true;
       textStartIndex = 9999;
+
+      section_0 = false;
+      section_1 = false;
+      section_2 = false;
+      section_3 = false;
+      section_4 = false;
+      section_5 = false;
+      section_6 = false;
+      section_6_1 = false;
+      section_6_2 = false;
+      section_6_3 = false;
+      section_6_4 = false;
+      section_6_5 = false;
+      section_6_6 = false;
+
       stop();
     }else if (textStartIndex > 673 && !section_6_5){
       document.querySelector(".section-6_5").scrollIntoView(true);
@@ -193,6 +216,9 @@ const play = () => {
       document.querySelector(".section-1").scrollIntoView(true);
       section_1 = true;
       stop();
+    }else if (textStartIndex > 245 && !section_1){
+      document.querySelector(".section-0").scrollIntoView(true);
+      section_0 = true;
     }
 
   }, 50);
