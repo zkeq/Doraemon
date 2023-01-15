@@ -157,7 +157,7 @@ blockquote{
   -ms-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-  visibility: 0;
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -172,6 +172,12 @@ blockquote{
 }
 
 @media screen and (max-width: 1200px) {
+  h1,h2,h3,h4,h5,h6,li {
+    line-height: 1.5rem;
+  }
+  ul > li {
+    margin: 0.3rem 0;
+  }
   pre {
     height: 25vh !important;
     margin-top: -60px;
