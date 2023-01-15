@@ -113,6 +113,10 @@ h2, h3{
   border-radius: 10px;
 }
 
+.code_wrap{
+  max-height: 400px;
+}
+
 a {
   text-decoration: double;
   color: #1677ff;
