@@ -165,7 +165,7 @@ blockquote{
   background: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   pre {
     height: 25vh !important;
     margin-top: -60px;
