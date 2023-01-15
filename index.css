@@ -167,7 +167,7 @@ blockquote{
 
 @media screen and (max-width: 800px) {
   pre {
-    height: 40vh !important;
+    height: 25vh !important;
     margin-top: -60px;
   }
   h2 {
