@@ -277,3 +277,84 @@ blockquote{
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+._000{
+  color: #000;
+}
+
+._00F{
+  color: #00F;
+}
+
+._0FF{
+  color: #0F0;
+}
+
+._0F0{
+  color: #0FF;
+}
+
+._FF0{
+  color: #F00;
+}
+
+._F0F{
+  color: #F0F;
+}
+
+/* _00000F
+_0000F0
+_000F00
+_00F000
+_0F0000
+_F00000 */
+
+._00000F{
+  color: #00000F;
+}
+
+._0000F0{
+  color: #0000F0;
+}
+
+._000F00{
+  color: #000F00;
+}
+
+._00F000{
+  color: #00F000;
+}
+
+._0F0000{
+  color: #0F0000;
+} 
+
+._F00000{
+  color: #F00000;
+}
+
+
+@font-face {
+  font-family: 'LXGWFasmartGothic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://media.onmicrosoft.cn/LXGWFasmartGothic.ttf');
+}
+
+
+
+html {
+  font-family: "LXGWFasmartGothic", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+code {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-family: "JetBrains Mono", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+}
+
