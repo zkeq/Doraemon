@@ -173,51 +173,51 @@ const play = () => {
 
       stop();
     }else if (textStartIndex > 673 && !section_6_5){
-      document.querySelector(".section-6_5").scrollIntoView(true);
+      document.querySelector(".section-6_5").scrollIntoView({block: "nearest", inline: "nearest"});
       section_6_5 = true;
       stop();
     }else if (textStartIndex > 633 && !section_6_4){
-      document.querySelector(".section-6_4").scrollIntoView(true);
+      document.querySelector(".section-6_4").scrollIntoView({block: "nearest", inline: "nearest"});
       section_6_4 = true;
       stop();
     }else if (textStartIndex > 593 && !section_6_3){
-      document.querySelector(".section-6_3").scrollIntoView(true);
+      document.querySelector(".section-6_3").scrollIntoView({block: "nearest", inline: "nearest"});
       section_6_3 = true;
       stop();
     }else if (textStartIndex > 553 && !section_6_2){
-      document.querySelector(".section-6_2").scrollIntoView(true);
+      document.querySelector(".section-6_2").scrollIntoView({block: "nearest", inline: "nearest"});
       section_6_2 = true;
       stop();
     }else if (textStartIndex > 513 && !section_6_1){
-      document.querySelector(".section-6_1").scrollIntoView(true);
+      document.querySelector(".section-6_1").scrollIntoView({block: "nearest", inline: "nearest"});
       section_6_1 = true;
       stop();
     }else if (textStartIndex > 473 && !section_6){
-      document.querySelector(".section-6").scrollIntoView(true);
+      document.querySelector(".section-6").scrollIntoView({block: "nearest", inline: "nearest"});
       section_6 = true;
       stop();
     }else if (textStartIndex > 435 && !section_5){
-      document.querySelector(".section-5").scrollIntoView(true);
+      document.querySelector(".section-5").scrollIntoView({block: "nearest", inline: "nearest"});
       section_5 = true;
       stop();
     }else if (textStartIndex > 396 && !section_4){
-      document.querySelector(".section-4").scrollIntoView(true);
+      document.querySelector(".section-4").scrollIntoView({block: "nearest", inline: "nearest"});
       section_4 = true;
       stop();
     }else if (textStartIndex > 359 && !section_3){
-      document.querySelector(".section-3").scrollIntoView(true);
+      document.querySelector(".section-3").scrollIntoView({block: "nearest", inline: "nearest"});
       section_3 = true;
       stop();
     }else if (textStartIndex > 321 && !section_2){
-      document.querySelector(".section-2").scrollIntoView(true);
+      document.querySelector(".section-2").scrollIntoView({block: "nearest", inline: "nearest"});
       section_2 = true;
       stop();
     }else if (textStartIndex > 283 && !section_1){
-      document.querySelector(".section-1").scrollIntoView(true);
+      document.querySelector(".section-1").scrollIntoView({block: "nearest", inline: "nearest"});
       section_1 = true;
       stop();
     }else if (textStartIndex > 245 && !section_1){
-      document.querySelector(".section-0").scrollIntoView(true);
+      document.querySelector(".section-0").scrollIntoView({block: "nearest", inline: "nearest"});
       section_0 = true;
     }
 
