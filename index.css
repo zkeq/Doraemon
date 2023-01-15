@@ -175,6 +175,7 @@ blockquote{
   pre {
     height: 25vh !important;
     margin-top: -60px;
+    padding-bottom: 20px;
   }
   h2 {
     font-size: 15px;
@@ -211,6 +212,7 @@ blockquote{
 
   .title_main{
     white-space: nowrap;
+    margin-left: 0.3rem;
   }
 
   .oneline {
